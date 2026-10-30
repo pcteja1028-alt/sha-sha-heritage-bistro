@@ -7,3 +7,90 @@
 .detail-render{grid-column:1/-1;margin:24px 0 0}.detail-render img{width:100%;max-height:720px;object-fit:cover;border-radius:4px}.detail-render figcaption{font-size:13px;color:#766b5b;padding-top:12px}
 
 #hero-render{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}.render-view #hero-render{display:block}.render-view #loading,.render-view .scene-copy,.render-view .map,.render-view .bottomline,.render-view .mobile-move{display:none!important}.render-view #light,.render-view #cut{display:none}.render-view .live{font-size:0}.render-view .live:after{content:"FINAL RENDER / A01";font-size:9px;letter-spacing:1.8px}.render-view #view-mode{background:#e9ddc3;color:#382c1c}
+
+/* Phone layouts: keep the interior clear and controls comfortably within reach. */
+@media (max-width: 800px) {
+  header { height: 76px; padding: 0 20px; }
+  .wordmark { font-size: 29px; }
+  .wordmark span { font-size: 7px; letter-spacing: 1.6px; margin-top: 7px; }
+  header button { min-height: 44px; padding: 10px 0 10px 14px; font-size: 12px; }
+  main { padding: 0 20px; }
+  .intro { display: block; padding: 30px 0 24px; }
+  .intro .eyebrow { max-width: 290px; font-size: 8px; line-height: 1.7; letter-spacing: 1.8px; }
+  h1 { font-size: clamp(38px, 8vw, 56px); letter-spacing: -1.5px; }
+  .lede { display: block; margin: 14px 0 0; font-size: 12px; line-height: 1.8; }
+  .lede br { display: none; }
+  .experience { height: 540px; height: clamp(440px, 66svh, 620px); min-height: 0; border-radius: 16px; isolation: isolate; }
+  .experience::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(#14120d75, transparent 30%, transparent 55%, #14120de6); z-index: -1; }
+  #hero-render, #scene { position: absolute; inset: 0; z-index: -2; }
+  #hero-render { object-position: 48% center; }
+  .topline { top: 14px; left: 14px; right: 14px; align-items: flex-start; gap: 10px; flex-direction: column; }
+  .live { padding: 0; background: none; font-size: 8px; letter-spacing: 1.5px; }
+  .topline > div { display: flex; flex-wrap: wrap; gap: 6px; width: 100%; }
+  .topline button, .bottomline button { min-height: 44px; border-radius: 9px; padding: 10px 12px; font-size: 11px; }
+  #view-mode { margin-right: auto; }
+  #full { min-width: 44px; font-size: 20px; padding: 6px 10px; }
+  .scene-copy { left: 18px; right: 18px; bottom: 132px; max-width: none; padding: 0; background: none; }
+  .scene-copy > span { font-size: 9px; }
+  .scene-copy h2 { font-size: 29px; line-height: 1.2; margin: 8px 0; }
+  .scene-copy p { display: block; max-width: 290px; font-size: 12px; line-height: 1.6; color: #e3d9c9; }
+  .bottomline { bottom: 16px; left: 14px; right: 14px; }
+  .bottomline > div { display: flex; gap: 6px; }
+  .bottomline button { padding: 10px; }
+  .bottomline button.primary { margin-left: 0; }
+  .mobile-move { left: 14px; bottom: 70px; gap: 8px; }
+  .mobile-move button { width: 48px; height: 48px; border-radius: 12px; touch-action: none; user-select: none; background: #171612bf; backdrop-filter: blur(12px); }
+  .render-view .topline { inset: 16px 16px auto; flex-direction: row; align-items: center; }
+  .render-view .topline > div { width: auto; }
+  .render-view .live:after { content: 'THE INTERIOR / A01'; font-size: 8px; letter-spacing: 1px; }
+  .render-view #view-mode { position: absolute; top: auto; bottom: 20px; left: 20px; right: 20px; min-height: 50px; font-size: 13px; font-weight: 600; border: none; }
+  .render-view .topline { bottom: 0; pointer-events: none; }
+  .render-view #full { background: #17161299; }
+  .stops { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; overflow: visible; border: 0; }
+  .stops button, .stops button:not(:first-child) { flex: 1 1 calc(33.333% - 8px); min-width: 0; min-height: 72px; padding: 12px 10px !important; border: 1px solid #ffffff18; border-radius: 10px; font-size: 11px; line-height: 1.4; background: #ffffff03; }
+  .stops button:last-child { border-right: 1px solid #ffffff18; }
+  .stops span { display: block; margin: 0 0 5px; font-size: 9px; }
+  .stops small { display: none; }
+  .stops button.active { border-color: #bb9966; background: #ad8c5b20; }
+  .stops button.active::before { display: none; }
+  .render-study { margin-top: 38px; gap: 18px; }
+  .render-study h3 { font-size: 29px; line-height: 1.2; margin: 12px 0; max-width: 300px; }
+  .render-study .eyebrow { font-size: 8px; letter-spacing: 1.5px; line-height: 1.8; }
+  .render-study p:not(.eyebrow) { font-size: 13px; }
+  .render-study img { border-radius: 12px; }
+  .detail-render { margin: 6px 0 0; }
+  .detail-render figcaption { color: #aaa08f; font-size: 11px; line-height: 1.6; }
+  .materials { padding: 32px 0; gap: 22px; align-items: stretch; }
+  .materials > div:first-child { width: 100%; }
+  .materials h3 { font-size: 26px; }
+  .swatches { order: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 12px; width: 100%; }
+  .swatches span { font-size: 11px; gap: 10px; }
+  .swatches i { width: 30px; height: 30px; flex-shrink: 0; }
+  .materials button { width: 100%; min-height: 48px; border: 1px solid #ffffff24; border-radius: 10px; text-align: left; padding: 12px 16px; }
+  footer { flex-direction: column; align-items: flex-start; padding: 24px 0 28px; gap: 12px; font-size: 9px; line-height: 1.7; }
+  footer a { min-height: 44px; display: inline-flex; align-items: center; font-size: 11px; color: #dfc49a; }
+  dialog { width: calc(100% - 24px); max-height: calc(100svh - 32px); padding: 34px 24px 24px; border-radius: 16px; }
+  dialog h2 { font-size: 30px; }
+  .close { min-width: 44px; min-height: 44px; right: 6px; top: 4px; }
+  #ref { padding: 48px 12px 12px; }
+  #loading { padding: 24px; text-align: center; }
+  #loading small { line-height: 1.7; }
+  .experience:fullscreen { border-radius: 0; height: 100dvh; }
+}
+@media (max-width: 360px) {
+  main { padding: 0 14px; }
+  header { padding: 0 14px; }
+  .topline button { padding: 10px 8px; font-size: 10px; }
+  .render-view .live:after { font-size: 7px; }
+}
+@media (max-width: 800px) and (orientation: landscape) {
+  .experience { height: 460px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+  .plan i { transition: none; }
+}
+@media (max-width: 800px) {
+  .render-view .topline { align-items: flex-start; }
+  .render-view .live { padding-top: 14px; }
+}
