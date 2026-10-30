@@ -1,0 +1,10 @@
+{
+  "before_triangles": 426248,
+  "after_triangles": 2954786,
+  "samples": 512,
+  "resolution": [
+    1920,
+    1280
+  ],
+  "note": "Interpretation of A01 reference, not a measured reconstruction. Browser export unchanged."
+}

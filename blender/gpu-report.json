@@ -1,0 +1,19 @@
+{
+  "cycles_devices": [
+    [
+      "11th Gen Intel Core i7-1165G7 @ 2.80GHz",
+      "CPU"
+    ]
+  ],
+  "render_engine": "BLENDER_EEVEE",
+  "source": "Sha-Sha-A01-Matched.blend",
+  "output": "heritage-a01.glb",
+  "gpu_renderer": "Intel(R) Iris(R) Xe Graphics",
+  "verified_gpu_3d_utilization_percent": 88.02,
+  "render_resolution": [
+    1800,
+    1200
+  ],
+  "shadow_pool_MB": 1536,
+  "final_shadow_buffer_warnings": 0
+}

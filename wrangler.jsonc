@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sha-sha-heritage-bistro",
+  "account_id": "47f72443404cd71db9acf9cdf72ad1e6",
+  "compatibility_date": "2026-10-29",
+  "workers_dev": true,
+  "assets": { "directory": "./.cloudflare-dist" },
+  "build": { "command": "npm run build" }
+}

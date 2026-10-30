@@ -1,0 +1,14 @@
+*.log
+*.blend1
+*.blend2
+__pycache__/
+*.py[cod]
+.openai/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+node_modules/
+.wrangler/
+.cloudflare-dist/
